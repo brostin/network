@@ -1,0 +1,21 @@
+R1#show ip route 192.168.5.130
+
+Routing entry for 192.168.5.128/28
+
+  Known via "eigrp 1", distance 90, metric 2172416, type internal
+
+  Redistributing via eigrp 1
+
+  Last update from 192.168.5.162 on Serial0/0/0.2, 00:20:16 ago
+
+  Routing Descriptor Blocks:
+
+  * 192.168.5.128, from 192.168.5.162, 00:20:16 ago, via Serial0/0/0.2
+
+      Route metric is 2172416, traffic share count is 1
+
+      Total delay is 20100 microseconds, minimum bandwidth is 1544 Kbit/sec
+
+      Reliability 255/255, minimum MTU 1500 bytes
+
+      Loading 1/255, Hops 1

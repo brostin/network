@@ -1,0 +1,64 @@
+***Python***
+
+1. Intro
+	
+	Python is a highly flexible language and can be used to automate and operate network infrastructure.
+	No compilers or build tools needed (like java or c++)
+	--A-- "Hello world" program.
+	Syntax is intuitive. Code is scalable, portable and re-usable.
+	--A-- syntax01.py  = comments, indentation, colons, run
+
+
+2. Python Types
+	
+	Python is a dynamically typed language. No need for declaration of types prior to use.
+	--A-- basic_py_types.py - check all data types. questions?
+	? --A-- my_vars, type(my_vars)
+	--A-- variables1.py - python references. check variables, lists, dictionaries once again, run
+
+
+3. Python Funcions
+
+	Built-in functions: working with files
+	--A-- files.py - open, assign, close
+	--A-- arguments.py - passing arguments to the script. remind of errors that can arise from inputs.
+	Functions help to reuse piece os code
+	--A-- banner.py
+	--A-- find_ospf.py - def, colon, arguments, defaults, return
+
+
+4. Packages and Modules
+
+	https://pypi.python.org/pypi 
+	https://docs.python.org/2/library
+	https://docs.python.org/3/library
+
+	Python library has an extensive built-in functions.
+	Python module is typically a single block of code providing additional functionality (functions).
+
+	pip - to install modules
+		to install pip: 	sudo easy_install pip
+		use pip: 			sudo pip install paramiko
+
+	--A-- bad_syntax.py = module is not present, fix the error
+
+	--A-- sys.path = path to all modules. pip auto adds new paths. if doing it manually - use sys.path.append("/folder") 
+
+
+5. Python Flow Control
+	
+	--A-- syntax01.py - if/elif/else, for/else
+	Boolean
+	--A-- comparison.py - checks is/is not - fix code, in/not in operator
+	--A-- or_and.py - boolean and/or operator
+
+6. Try creating script that can ssh to the device using paramiko, screen scrape ospf output and prints it.
+
+---	Name references - not variables (although we call them so). Name is a reference to a particular object in memory
+---	Mutable and Immutable types? string, int, tuple - immutable; list, dictionary - mutable
+---	--A-- rx_bytes.py
+---	list of different types - can be, but better not to do so
+---	--A-- scopes.py - global and local variables. fix script by adding "global private_string" to the function.
+---	Python resolves names starting from local names and moving outwards.
+
+
